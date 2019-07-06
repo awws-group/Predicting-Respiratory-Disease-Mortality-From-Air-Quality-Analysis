@@ -7,7 +7,6 @@ A. Research Citations
 
 B. Data Sources
 [1] "U.S. Pollution Data Pollution in the U.S. since 2000" (US federal EPA)
-
 https://www.kaggle.com/epa/epa-historical-air-quality
 https://aqsdr1.epa.gov/aqsweb/aqstmp/airdata/download_files.html
 
