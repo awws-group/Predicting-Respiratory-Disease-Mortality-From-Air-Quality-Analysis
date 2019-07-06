@@ -2,6 +2,7 @@
 
 A. Research Citations
 [1] "Trends and Patterns of Differences in Chronic Respiratory Disease Mortality Among US Counties, 1980-2014" (Dwyer-Lindgren et al 2017) https://jamanetwork.com/journals/jama/article-abstract/2654821
+
 [2] "Cigarette smoking prevalence in US counties: 1996-2012" (Dwyer-Lindgren et al 2017) https://doi.org/10.1186/1478-7954-12-5
 
 B. Data Sources
