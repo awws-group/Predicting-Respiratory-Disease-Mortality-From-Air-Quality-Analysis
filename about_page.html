@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootswatch Stylesheet -->
+    <link rel="stylesheet" href="static/bootstyle.css">
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="static/style.css">
+    <!-- Title -->
+    <title>Predicting-Respiratory-Disease-Mortality-From-Air-Quality-Analysis</title>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Create Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e5ddd2;">
+
+        <!-- Header (Home Link) is Home Button -->
+        <a class="navbar-brand" href="index.html"><img id="logo" alt="Logo" src="images/pollution.png" width="20"
+                height="20"><span>Home</span></a>
+
+        <!-- Make it so navbar collapses to icon dropdown when window size decreased -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Stuff in collapsible navbar -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- Menu items -->
+            <div class="navbar-nav ml-auto nav-item dropdown">
+                <a class="nav-item nav-link" href="about_page.html">About</a>
+                <a class="nav-item nav-link" href="data_page.html">Data</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Make About Page -->
+
+    <!-- Project Description (with reference links box) -->
+    <div>
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-lg-6">
+                    <br>
+                    <h1>About the Project</h1>
+                    <h4>The purpose</h4>
+                    <h6>To predict US rates of respiratory infection amongst adults on a county-level by analyzing
+                        several air quality metrics</h6>
+                    <h4>The Plan</h4>
+                    <ol>
+                        <li>Identify data sets</li>
+                        <li>Clean data sets, removing unneeded data</li>
+                        <li>Develop ML models</li>
+                        <li>Record stats from target cities</li>
+                        <li>Compare model outputs to city targets</li>
+                        <li>Create charts in Tableau</li>
+                        <li>Embed visualizations in a website</li>
+                    </ol>
+                    <h6></h6>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Meet the Team</strong></h4>
+                            <!-- Courtney -->
+                            <div class="card h-25 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/Courtney.jpeg"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Courtney Gainor</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                        href="https://github.com/cgainor" target="_blank">Github: cgainor</href></a>
+                                </h6>
+                            </div>
+                            <!-- Jorge -->
+                            <div class="card h-25 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/Jorge.jpeg"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Jorge Pires</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                        href="https://github.com/jorgepires311" target="_blank">Github: jorgepires311
+                                        </href></a></h6>
+                            </div>
+                            <!-- James -->
+                            <div class="card h-25 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/James.png"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>James Carter</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding-left: 5px;padding-right: 5px;padding-top: 2px;padding-bottom: 2px"><a
+                                        href="https://github.com/jmc39" target="_blank">Github: jmc39</href></a></h6>
+                            </div>
+                            <!-- John -->
+                            <div class="card h-25 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/John.jpeg"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px"><strong>John Read</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px;letter-spacing: 1px"><a
+                                        href="https://github.com/industrialhygiene1" target="_blank">Github:
+                                        industrialhygiene1</href></a></h6>
+                            </div>
+                            <!-- Edward -->
+                            <div class="card h-25 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/Edward.jpeg"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Edward Shafron</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                        href="https://github.com/EShafron" target="_blank">Github:
+                                        EShafron</href></a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section with tan background image -->
+    <div id="tan-back">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+            aliquip ex ea
+            commodo consequat.</p>
+    </div>
+</body>
+
+</html>
