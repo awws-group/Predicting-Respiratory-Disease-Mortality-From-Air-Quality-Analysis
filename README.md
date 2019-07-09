@@ -2,6 +2,7 @@
 </br>
 
 [Link to Website](https://awws-group.github.io/Predicting-Respiratory-Disease-Mortality-From-Air-Quality-Analysis/)
+<hr>
 
 A. <b>Research Citations</b></br>
 [1] "Trends and Patterns of Differences in Chronic Respiratory Disease Mortality Among US Counties, 1980-2014" (Dwyer-Lindgren et al 2017)</br>https://jamanetwork.com/journals/jama/article-abstract/2654821
