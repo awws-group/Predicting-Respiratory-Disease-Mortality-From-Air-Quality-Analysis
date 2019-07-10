@@ -25,6 +25,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- JavaScript for Embedding Tableau Visualization -->
+    <script type="text/javascript"
+	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+                options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+
+            var viz = new tableau.Viz(containerDiv, url, options);
+            // Create a viz object and embed it in the container div.
+        }
+    </script>
 </head>
 
 <body>
@@ -66,7 +84,8 @@
         <div class="row justify-content-between">
             <div>
                 <p>Tableau Visualization</p>
-                <img src="images/Map_of_USA_with_county_outlines.png" alt="Map_of_USA_with_county_outlines">
+                <div id="vizContainer" style="width:800px; height:700px;"></div>
+                <!-- <img src="images/Map_of_USA_with_county_outlines.png" alt="Map_of_USA_with_county_outlines"> -->
             </div>
         </div>
     </div>
