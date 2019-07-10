@@ -24,5 +24,3 @@ http://ghdx.healthdata.org/record/ihme-data/united-states-chronic-respiratory-di
 http://ghdx.healthdata.org/record/ihme-data/united-states-smoking-prevalence-county-1996-2012
 </br>
 </br>
-C. <b>Code Resources</b></br>
-https://cloud.google.com/bigquery/docs/bigquery-storage-python-pandas
