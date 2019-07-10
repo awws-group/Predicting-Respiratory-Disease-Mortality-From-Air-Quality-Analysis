@@ -1,0 +1,425 @@
+    <!-- Create Grid -->
+    <div class="container-fluid">
+        <!-- Create Row -->
+        <div class="jumbotron">
+            <h1 style="text-align: center; color:black">Mars News</h1>
+            <div class="container-fluid">
+                <div class="row justify-content-around">
+                    <div class="col-lg-6">
+                        <div class="card" style="margin-top:20px">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong><u>Latest Mars News</u></strong></h4>
+                                <h6 class="card-subtitle mb-2 text-muted">{{mars.news_title}}</h6>
+                                <p class="card-text">{{mars.news_summary}}</p>
+                                <a href="{{mars.news_url}}" target="_blank" class="card-link">View All News</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="margin-top:20px">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong><u>Current Weather on Mars</u></strong></h4>
+                                <h6 class="card-subtitle mb-2 text-muted">{{mars.weather}}</h6>
+                                <a href="{{mars.news_url}}" target="_blank" class="card-link">View All Weather
+                                    Updates</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 style="text-align: center; color:gray">Mars Hemispheres</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-primary m-1" style="max-width: 20rem; text-align: center">
+                        <div class="card-header">{{mars.hemisphere_image_urls[0]['title']}}</div>
+                        <div class="card-body">
+                            <img src="{{mars.hemisphere_image_urls[0]['img_url']}}"
+                                alt="{{mars.hemisphere_image_urls[0]['title']}}" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-primary m-1" style="max-width: 20rem; text-align: center">
+                        <div class="card-header">{{mars.hemisphere_image_urls[1]['title']}}</div>
+                        <div class="card-body">
+                            <img src="{{mars.hemisphere_image_urls[1]['img_url']}}"
+                                alt="{{mars.hemisphere_image_urls[1]['title']}}" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-primary m-1" style="max-width: 20rem; text-align: center">
+                        <div class="card-header">{{mars.hemisphere_image_urls[2]['title']}}</div>
+                        <div class="card-body">
+                            <img src="{{mars.hemisphere_image_urls[2]['img_url']}}"
+                                alt="{{mars.hemisphere_image_urls[2]['title']}}" width='100%'>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-primary m-1" style="max-width: 20rem; text-align: center">
+                        <div class="card-header">{{mars.hemisphere_image_urls[3]['title']}}</div>
+                        <div class="card-body">
+                            <img src="{{mars.hemisphere_image_urls[3]['img_url']}}"
+                                alt="{{mars.hemisphere_image_urls[3]['title']}}" width='100%'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="col-lg-5">
+                    <div class="card" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Meet the Team</strong></h4>
+                            <!-- Courtney -->
+                            <div class="card h-100 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/Courtney.jpeg"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Courtney Gainor</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                        href="https://github.com/cgainor" target="_blank">Github: cgainor</href></a>
+                                </h6>
+                            </div>
+                            <!-- Jorge -->
+                            <div class="card h-100 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/Jorge.jpeg"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Jorge Pires</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                        href="https://github.com/jorgepires311" target="_blank">Github: jorgepires311
+                                        </href></a></h6>
+                            </div>
+                            <!-- James -->
+                            <div class="card h-100 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/James.png"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>James Carter</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding-left: 5px;padding-right: 5px;padding-top: 2px;padding-bottom: 2px"><a
+                                        href="https://github.com/jmc39" target="_blank">Github: jmc39</href></a></h6>
+                            </div>
+                            <!-- John -->
+                            <div class="card h-100 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/John.jpeg"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px"><strong>John Read</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px;letter-spacing: 1px"><a
+                                        href="https://github.com/industrialhygiene1" target="_blank">Github:
+                                        industrialhygiene1</href></a></h6>
+                            </div>
+                            <!-- Edward -->
+                            <div class="card h-100 d-inline-block"
+                                style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                <img class="card-img-top" style="padding-bottom: 5px" src="images/Edward.jpeg"
+                                    alt="Card image">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Edward Shafron</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                        href="https://github.com/EShafron" target="_blank">Github:
+                                        EShafron</href></a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+<!-- ------------------------ -->
+
+    <!-- TRYING CARD STACK FOR SIZING -->
+    <div class="col-lg-5">
+        <div class="card" style="margin-top:20px;margin-bottom:20px;text-align: center">
+            <div class="card-body">
+                <h4 class="card-title"><strong>Meet the Team</strong></h4>
+                <div class="container">
+                    <div class="card-deck text-center no-gutters">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <div class="card mb-4">
+                                <img class="card-img-top img-fluid" src="images/Courtney.jpeg" alt="Card image cap">
+                                <h5 class="card-title" style="font-size: 10px;"><strong>Courtney
+                                        Gainor</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;"><a
+                                        href="https://github.com/cgainor" target="_blank">Github: cgainor</href></a>
+                                </h6>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <div class="card mb-4">
+                                <img class="card-img-top img-fluid" src="images/Jorge.jpeg" alt="Card image cap">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Jorge
+                                        Pires</strong>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                        href="https://github.com/jorgepires311" target="_blank">Github:
+                                        jorgepires311
+                                        </href></a></h6>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <div class="card mb-4">
+                                <img class="card-img-top img-fluid" src="images/James.png" alt="Card image cap">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>James
+                                        Carter</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted"
+                                    style="font-size: 7px;padding-left: 5px;padding-right: 5px;padding-top: 2px;padding-bottom: 2px">
+                                    <a href="https://github.com/jmc39" target="_blank">Github: jmc39</href></a></h6>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <div class="card mb-4">
+                                <img class="card-img-top img-fluid" src="images/John.jpeg" alt="Card image cap">
+                                <h5 class="card-title"
+                                    style="font-size: 10px;padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px">
+                                    <strong>John Read</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted"
+                                    style="font-size: 7px;padding: 2px;letter-spacing: 1px"><a
+                                        href="https://github.com/industrialhygiene1" target="_blank">Github:
+                                        industrialhygiene1</href></a></h6>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <div class="card mb-4">
+                                <img class="card-img-top img-fluid" src="images/Edward.jpeg" alt="Card image cap">
+                                <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Edward
+                                        Shafron</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                        href="https://github.com/EShafron" target="_blank">Github:
+                                        EShafron</href></a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-5">
+                <div class="card" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Meet the Team</strong></h4>
+                        <div class="card-deck">
+                            <div class="card mb-4" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                                <img class="card-img-top img-fluid" src="images/Courtney.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Courtney
+                                            Gainor</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                            href="https://github.com/cgainor" target="_blank">Github: cgainor</href></a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                                <img class="card-img-top img-fluid" src="images/Jorge.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Jorge
+                                            Pires</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                            href="https://github.com/jorgepires311" target="_blank">Github:
+                                            jorgepires311</href></a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <!-- <div class="w-100 d-none d-sm-block d-md-none"> -->
+                                <!-- wrap every 2 on sm-->
+                            <!-- </div> -->
+                            <div class="card mb-4" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                                <img class="card-img-top img-fluid" src="images/James.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>James
+                                            Carter</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                            href="https://github.com/jmc39" target="_blank">Github: jmc39</href></a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <!-- <div class="w-100 d-none d-md-block d-lg-none"> -->
+                                <!-- wrap every 3 on md-->
+                            <!-- </div> -->
+                            <div class="card mb-4" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                                <img class="card-img-top img-fluid" src="images/John.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>John
+                                            Read</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                            href="https://github.com/industrialhygiene1" target="_blank">Github:
+                                            industrialhygiene1</href></a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <!-- <div class="w-100 d-none d-sm-block d-md-none"> -->
+                                <!-- wrap every 2 on sm-->
+                            <!-- </div> -->
+                            <!-- <div class="w-100 d-none d-lg-block d-xl-none"> -->
+                                <!-- wrap every 4 on lg-->
+                            <!-- </div> -->
+                            <div class="card mb-4" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                                <img class="card-img-top img-fluid" src="images/Edward.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Edward
+                                            Shafron</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                            href="https://github.com/EShafron" target="_blank">Github: EShafron</href>
+                                            </a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-xl-block">
+                                <!-- wrap every 5 on xl-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+<!-- ------- -->
+    <div class="row equal-height">
+        <div class="col-12 col-md-6">
+            <div class="card">
+                <!-- Your card content here -->
+                <div class="row equal-height">
+                    <div class="col-12 col-md-6">
+                        <div class="card" style="margin-top:20px;margin-bottom:20px;text-align: center">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Meet the Team</strong></h4>
+
+                                <!-- Courtney -->
+                                <div class="row equal-height">
+
+                                    <div class="card h-100 d-inline-block"
+                                        style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                        <div style="height:10rem">
+                                            <img class="card-img-top" style="padding-bottom: 5px"
+                                                src="images/Courtney.jpeg" alt="Card image">
+                                            <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Courtney
+                                                    Gainor</strong></h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"
+                                                style="font-size: 7px;padding: 2px"><a href="https://github.com/cgainor"
+                                                    target="_blank">Github: cgainor</href></a>
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Jorge -->
+                                <div class="row equal-height">
+
+                                    <div class="card h-100 d-inline-block"
+                                        style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                        <!-- <div style="height:10rem"> -->
+                                        <img class="card-img-top" style="padding-bottom: 5px" src="images/Jorge.jpeg"
+                                            alt="Card image">
+                                        <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Jorge
+                                                Pires</strong>
+                                        </h5>
+                                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                                href="https://github.com/jorgepires311" target="_blank">Github:
+                                                jorgepires311
+                                                </href></a></h6>
+                                        <!-- </div> -->
+
+                                    </div>
+                                </div>
+                                <!-- James -->
+                                <div class="row equal-height">
+
+                                    <div class="card h-100 d-inline-block"
+                                        style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                        <!-- <div style="height:10rem"> -->
+                                        <img class="card-img-top" style="padding-bottom: 5px" src="images/James.png"
+                                            alt="Card image">
+                                        <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>James
+                                                Carter</strong></h5>
+                                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px">
+                                            <a href="https://github.com/jmc39" target="_blank">Github: jmc39</href></a>
+                                        </h6>
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+
+
+                                <!-- John -->
+                                <div class="row equal-height">
+
+                                    <div class="card h-100 d-inline-block"
+                                        style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                        <!-- <div style="height:10rem"> -->
+                                        <img class="card-img-top" style="padding-bottom: 5px" src="images/John.jpeg"
+                                            alt="Card image">
+                                        <h5 class="card-title" style="font-size: 10px;padding: 2px">
+                                            <strong>John Read</strong></h5>
+                                        <h6 class="card-subtitle mb-2 text-muted"
+                                            style="font-size: 7px;padding: 2px;letter-spacing: 1px"><a
+                                                href="https://github.com/industrialhygiene1" target="_blank">Github:
+                                                industrialhygiene1</href></a></h6>
+                                    </div>
+                                </div>
+
+                                <!-- </div> -->
+                                <!-- Edward -->
+                                <div class="row equal-height">
+
+                                    <div class="card h-100 d-inline-block"
+                                        style="width: 19%;margin-top:20px;border-radius: 3%;text-align: center">
+                                        <!-- <div style="height:10rem"> -->
+                                        <img class="card-img-top" style="padding-bottom: 5px" src="images/Edward.jpeg"
+                                            alt="Card image">
+                                        <h5 class="card-title" style="font-size: 10px;padding: 2px"><strong>Edward
+                                                Shafron</strong></h5>
+                                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 7px;padding: 2px"><a
+                                                href="https://github.com/EShafron" target="_blank">Github:
+                                                EShafron</href></a></h6>
+                                        <!-- </div> -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>

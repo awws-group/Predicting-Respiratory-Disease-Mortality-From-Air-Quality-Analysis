@@ -81,12 +81,12 @@ img {
     opacity: .6;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 812px) {
     /* Manage Display Headers for Mobile Devices */
     .display-1 {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.0;
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.0;
     }
     
     .display-2 {
@@ -106,4 +106,17 @@ img {
         font-weight: 300;
         line-height: 1.0;
     }
+}
+
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    flex: 1;
 }
