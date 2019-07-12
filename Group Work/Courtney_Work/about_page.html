@@ -239,24 +239,73 @@
                     (https://www.epa.gov/indoor-air-quality-iaq/ozone-generators-are-sold-air-cleaners).</h7><br>
                 <br>
                 <h4 id="HowTo">How to Read Maps and Tables</h4>
+                <h6 style="display:inline;">- </h6>
+                <h7 style="display:inline;">The maps and tables are divided up by machine learning model: multiple
+                    linear regression vs. random forest regression.</h7><br>
+                <h6 style="display:inline;">- </h6>
+                <h7 style="display:inline;">Interactive maps show county-level detail on asthma mortality rate per
+                    100,000 people. Applying
+                    filters to select a subset of states and counties allows for ad hoc data exploration. Users can
+                    download data extracts of filtered selections.</h7><br>
+                <h6 style="display:inline;">- </h6>
+                <h7 style="display:inline;">The tables are interactive crosstabs drawn from the same data set as the
+                    maps. The tables are
+                    organized by observed vs. predicted asthma mortality rate and disaggregated to the County-level.
+                    Users can download data extracts of filtered selections.</h7>
+                <br>
                 <br>
                 <h4 id="SRC">Data Sources</h4>
+                <h6><a href="https://www.kaggle.com/epa/epa-historical-air-quality" target="_blank">EPA Historical
+                        Air
+                        Quality Data</a></h6>
+                <h6><a href="http://ghdx.healthdata.org/record/ihme-data/united-states-chronic-respiratory-disease-mortality-rates-county-1980-2014"
+                        target="_blank">United States Chronic Respiratory Disease Mortality Rates by County</a></h6>
                 <br>
                 <h4 id="LimData">Limitations of the Data</h4>
+                <h6 style="display:inline;">1 - </h6>
+                <h7 style="display:inline;">Asthma, as our outcome measure, was based on annual mortality rate.
+                    Generally, health outcomes are assessed based on prevalence. Further, death caused by asthma is
+                    rare
+                    relatively to other illnesses.</h7>
+                <br>
+                <h6 style="display:inline;">2 - </h6>
+                <h7 style="display:inline;">For the project EPA data set, air quality was monitored at multiple
+                    sites in
+                    some counties and at one site in other counties. It is unclear if the EPA standardizes the
+                    geographic distribution of the sites or if counties determine how many and where. Therefore it
+                    is
+                    unclear whether geographic distribution impacts the model.</h7>
+                <br>
+                <h6 style="display:inline;">3 - </h6>
+                <h7 style="display:inline;">Out of the 3242 US counties (as measured by FIPS code), the data from ML
+                    models visualized represent:
+                    MLR -
+                    1108 county observations;
+                    363 county predictions
+                    <em>and</em>
+                    RFR -
+                    1107 county observations;
+                    363 county predictions.</h7>
+                <br>
                 <br>
                 <h4 id="Citation">Suggested Citation</h4>
-                <h6>Predicting Respiratory Disease Mortality Rates From Air Quality Analysis. Accessed [Month/Day/Year]
+                <h6>Predicting Respiratory Disease Mortality Rates From Air Quality Analysis. Accessed
+                    [Month/Day/Year]
                     from
                     https://awws-group.github.io/Predicting-Respiratory-Disease-Mortality-From-Air-Quality-Analysis/index.html.
                 </h6>
                 <br>
                 <h4 id="Code">View the Code</h4>
-                <h6><a href="multi_linear.html">Click here to view the Jupyter Notebook detailing the process to create
+                <h6><a href="multi_linear.html">Click here to view the Jupyter Notebook detailing the process to
+                        create
                         and use the Multi-Linear Regression Model</a></h6>
-                <h6><a href="random_forest.html">Click here to view the Jupyter Notebook detailing the process to create
+                <h6><a href="random_forest.html">Click here to view the Jupyter Notebook detailing the process to
+                        create
                         and use the Random Forest Regression Model</a></h6>
                 <h6><a href="de-dupe_pollutants_data.html">Click here to view the Jupyter Notebook detailing the
                         Pollutants Data</a></h6>
+                <h6><a href="images/air_pollution.png"
+                        target="_blank">Click here to view "The Amazing World of Science" Visualization</a></h6>
                 <h6><a href="https://github.com/awws-group/Predicting-Respiratory-Disease-Mortality-From-Air-Quality-Analysis.git"
                         target="_blank">Click here to view the Github Repository for this Project</a></h6>
                 <br>
